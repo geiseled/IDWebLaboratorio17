@@ -1,5 +1,5 @@
 // Autor: Pacheco Medina Geisel Reymar
-// Ejercicio 5: Forzar un error usando console.log y manejarlo con try-catch-finally
+// Ejercicio 5: Forzar un error usando console.log
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -7,11 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
         // provocar un ReferenceError usando console.log con una variable inexistente
         console.log(nombreInexistente);
     } catch (e) {
-        // imprimir mensaje personalizado segun el enunciado
+        // imprimir mensaje
         console.log("fallo");
     } finally {
-        // este bloque siempre se ejecuta
+        // este bloque es el que siempre se ejecuta
         console.log("siempre se ejecuta");
     }
-
 });
