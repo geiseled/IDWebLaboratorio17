@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             setTimeout(() => {
                 resolve("Mensaje cargado");
-            }, 1000); // 1 segundo
+            }, 1000); // espera 1 segundo
         });
     }
 
@@ -19,5 +19,4 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(mensaje => {
             console.log("Resultado:", mensaje);
         });
-
 });
