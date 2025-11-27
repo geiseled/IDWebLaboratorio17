@@ -2,7 +2,6 @@
 // Ejercicio 15: Version con promesas de dividirAsync con uso opcional de sleep
 
 document.addEventListener("DOMContentLoaded", () => {
-
     // funcion sleep para pausar usando promesas
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
@@ -12,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Iniciando division asincronica (promesa)...");
 
         return new Promise((resolve, reject) => {
-
             setTimeout(() => {
                 if (b === 0) {
                     reject(new Error("No se puede dividir entre cero"));
@@ -20,14 +18,14 @@ document.addEventListener("DOMContentLoaded", () => {
                     resolve(a / b);
                 }
             }, 1500);
-
         });
     }
 
     async function ejecutarPruebas() {
 
-        // ------------------- PRUEBA 1 -------------------
-        let a = 10, b = 0;
+        // prueba 1
+        let a = 10;
+        let b = 0;
         console.log("Llamada 1 - Valores recibidos:", a, "/", b);
 
         try {
@@ -41,9 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
         await sleep(2000);
         console.log("Han pasado 2 segundos...\n");
 
-
-        // ------------------- PRUEBA 2 -------------------
-        a = 20; 
+        // prueba 2
+        a = 20;
         b = 4;
         console.log("Llamada 2 - Valores recibidos:", a, "/", b);
 
