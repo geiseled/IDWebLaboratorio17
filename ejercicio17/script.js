@@ -11,11 +11,8 @@ function cargarMensaje() {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-
     console.log("Iniciando carga del mensaje...");
-
     // usamos await para esperar la promesa
     const mensaje = await cargarMensaje();
-
     console.log("Resultado:", mensaje);
 });
