@@ -10,14 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
         console.log(x.nombre); // provocar el TypeError accediendo propiedad de null
     } catch (e) {
-
-        // verificar si es un TypeError
-        if (e instanceof TypeError) {
+        if (e instanceof TypeError) { // verificar si es un TypeError
             console.log("Se capturo un TypeError:", e.message);
         } else {
             console.log("Se capturo otro tipo de error:", e.message);
         }
-
     }
-
 });
